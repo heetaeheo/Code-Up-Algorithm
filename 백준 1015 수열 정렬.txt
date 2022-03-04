@@ -1,0 +1,66 @@
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Arrays;
+import java.util.StringTokenizer;
+
+
+public class Main {
+
+	    public static int[] P;
+	     static Elem[] B;
+	    public static int N;
+	    public static StringBuilder str = new StringBuilder();
+	    
+   static class Elem implements Comparable<Elem> {
+	    	
+	    	public int num, idx;
+	    	
+	    	@Override
+	    	public int compareTo(Elem other) {
+	    		return num - other.num;
+	    	}
+	    }
+	    
+	    
+	
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+
+		input();
+	    sort();
+	    System.out.println(str);
+	     
+	       
+	}
+	
+	public static void input() throws IOException {
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	       
+	     N = Integer.parseInt(br.readLine());
+	     String[] split = br.readLine().split(" ");
+	     B = new Elem[N];
+	     P = new int[N];
+	     
+	     for(int i=0;i<N;i++) {
+	    	 B[i] = new Elem();
+	    	 B[i].num = Integer.parseInt(split[i]);
+	    	 B[i].idx = i;
+	     }
+	     
+	}
+
+	public static void sort() {
+		Arrays.sort(B);
+		for(int i =0;i<N; i++) {
+			P[B[i].idx] =i;
+		}	
+		for(int i=0; i<N; i++) {
+			str.append(P[i]).append(' ');
+		}
+		str.append('\n');
+	}
+
+}
