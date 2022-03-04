@@ -1,0 +1,52 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Arrays;
+
+
+public class Main {
+
+	    public static long[] P;
+	    public static int N;
+	    public static StringBuilder str = new StringBuilder();
+	    public static long mode;
+	    public static int modeCnt = 1, curCnt = 1;
+	    
+	
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		
+		N = Integer.parseInt(br.readLine());
+	    P = new long[N];
+	    
+	    for(int i=0;i<N;i++) {
+	    	P[i] = Long.parseLong(br.readLine());
+	    }
+	    sort();
+	    System.out.println(mode);
+	}
+	
+	public static void sort() {
+		Arrays.sort(P);
+		mode = P[0];
+		
+		for(int i=1;i<N;i++) {
+			if(P[i] == P[i-1]) {
+				curCnt ++;
+			} else {
+				curCnt =1;
+			}
+			
+			if(curCnt > modeCnt) {
+				modeCnt = curCnt;
+				mode = P[i];
+			}
+		}
+	
+	}
+
+	
+}
