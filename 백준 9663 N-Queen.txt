@@ -36,11 +36,11 @@ public class Main{
                 for (int i=1;i<=row-1;i++){
                     // (i, arr[i])
                     if (attackable(row, c, i, arr[i])){ //공격가능한 자리에 퀸이 놓였는지 attackable 함수를 사용하여 확인
-                        possible = false;
-                        break;
+                        possible = false; //퀸이 공격당하는 위치에 놓여있다면 
+                        break;            //  break을 통해 for문 중단 ( 탐색 시간을 줄여줌 ) 
                     }
                 }
-                if (possible) { //제대로 퀸을 놓았으면 그 뒤로도 가능한 자리를 탐색
+                if (possible) { //제대로 퀸을 공격을 당하는 위치가 아니라면 그 뒤로도 가능한 자리를 탐색
                     arr[row] = c;
                     dfs(row + 1);
                     arr[row] = 0;
