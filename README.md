@@ -17,6 +17,6 @@
 
 백준 카드 : https://velog.io/@heetaeheo/백준Java-11652-카드
 
-백준 화살표 : 
+백준 화살표 : https://velog.io/@heetaeheo/백준Java-15970-화살표-그리기
 
 백준 수열정리 : 
