@@ -1,0 +1,125 @@
+import java.io.BufferedReader;
+import java.util.Arrays;
+import java.util.StringTokenizer;
+import java.io.InputStreamReader;
+import java.io.FileReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+public class Main {
+	
+	
+	static int N;
+	static int[] A;
+	
+	static FastReader scan = new FastReader();
+	static StringBuilder sb = new StringBuilder();
+	
+	static void input() {
+		
+		N = scan.nextInt();
+		A = new int[N+1];
+		for(int i =1 ; i<=N; i++) {
+			A[i] = scan.nextInt();
+		}
+	}
+	
+	static int findAns(int[] A, int L, int R, int X) {
+		int result = R +1 ; 
+		
+		
+		while(L <= R) {
+            int mid = (L + R) /2;
+			if(A[mid] >= X) {
+				result = mid ;
+				R = mid - 1;
+			} else {
+				L = mid + 1;
+		    }
+        }
+		return result;
+	}
+	
+	
+	
+	static void find() {
+		
+		Arrays.sort(A, 1, N + 1);
+        
+		int v1= 0 , v2 =0;
+		int sum = Integer.MAX_VALUE;
+		for(int i = 1; i <= N - 1; i++) {
+			int result = findAns(A,i+1,N,-A[i]);
+			
+			if(i < result - 1 && Math.abs(A[i] + A[result -1] ) < sum) {
+				sum = Math.abs(A[i] + A[result - 1]);
+				v1 = A[i];
+				v2 = A[result - 1];
+			}
+			
+			if(result <= N&& Math.abs(A[i] + A[result] ) < sum) {
+				sum = Math.abs(A[result] + A[i]);
+				v1 = A[i];
+				v2 = A[result];
+			}
+		}
+		
+		sb.append(v1).append(' ').append(v2);
+		System.out.println(sb);
+	}
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+    input();
+    find();
+	}
+	
+	static class FastReader {
+	BufferedReader br;
+	StringTokenizer st;
+	
+	public FastReader() {
+		br = new BufferedReader(new InputStreamReader(System.in));
+		}
+	
+	public FastReader(String s) throws FileNotFoundException {
+		br = new BufferedReader(new FileReader(new File(s)));
+		}
+	
+	
+	String next() {
+		while(st == null || !st.hasMoreElements()) {
+			try {
+				st = new StringTokenizer(br.readLine());
+			} catch(IOException e) {
+				e.printStackTrace();
+			}
+		}
+		return st.nextToken();
+		}
+	
+	int nextInt() {
+		return Integer.parseInt(next());
+	}
+	long nextLong() {
+		return Long.parseLong(next());
+	}
+	
+	double nextDouble() {
+		return Double.parseDouble(next());
+	}
+	
+	String nextLine() {
+		String str= "";
+		try {
+			str = br.readLine();
+		} catch(IOException e) {
+			e.printStackTrace();
+		}
+		return str;
+		}
+	}
+
+}
