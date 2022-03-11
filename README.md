@@ -17,6 +17,16 @@
 
 백준 카드 : https://velog.io/@heetaeheo/백준Java-11652-카드
 
-백준 화살표 : https://velog.io/@heetaeheo/백준Java-15970-화살표-그리기
+백준 화살표 그리기 : https://velog.io/@heetaeheo/백준Java-15970-화살표-그리기
 
-백준 수열정리 : 
+백준 수열정리 : https://velog.io/@heetaeheo/백준Java-1015-수열-정리
+
+백준 먹을것인가 먹힐 것인가 : https://velog.io/@heetaeheo/백준Java-7795-먹을-것인가-먹힐-것인가
+
+백준 두 용액 : https://velog.io/@heetaeheo/백준Java-2470-두-용액
+
+백준 듣보잡 : https://velog.io/@heetaeheo/백준Java-1764-듣보잡
+
+백준 수 찾기 : https://velog.io/@heetaeheo/백준Java-1920-수-찾기
+
+백준 두 수의 합 : https://velog.io/@heetaeheo/백준Java-3273-두-수의-합
