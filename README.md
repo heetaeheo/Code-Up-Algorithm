@@ -30,3 +30,5 @@
 백준 수 찾기 : https://velog.io/@heetaeheo/백준Java-1920-수-찾기
 
 백준 두 수의 합 : https://velog.io/@heetaeheo/백준Java-3273-두-수의-합
+
+백준 숫자카드 2 : https://velog.io/@heetaeheo/백준Java-10816-숫자카드-2
