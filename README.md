@@ -32,3 +32,7 @@
 백준 두 수의 합 : https://velog.io/@heetaeheo/백준Java-3273-두-수의-합
 
 백준 숫자카드 2 : https://velog.io/@heetaeheo/백준Java-10816-숫자카드-2
+
+백준 나무 자르기 : https://velog.io/@heetaeheo/백준Java-2805-나무-자르기
+
+백준 랜선 자르기 : https://velog.io/@heetaeheo/백준Java-1654-랜선-자르기
