@@ -36,3 +36,9 @@
 백준 나무 자르기 : https://velog.io/@heetaeheo/백준Java-2805-나무-자르기
 
 백준 랜선 자르기 : https://velog.io/@heetaeheo/백준Java-1654-랜선-자르기
+
+백준 예산 : https://velog.io/@heetaeheo/백준Java-2512-예산
+
+백준 공유기 설치 : https://velog.io/@heetaeheo/백준Java-2110-공유기-설치
+
+백준 용돈 관리 : https://velog.io/@heetaeheo/백준Java-6236-용돈-관리
