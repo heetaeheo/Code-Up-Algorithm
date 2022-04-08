@@ -42,3 +42,9 @@
 백준 공유기 설치 : https://velog.io/@heetaeheo/백준Java-2110-공유기-설치
 
 백준 용돈 관리 : https://velog.io/@heetaeheo/백준Java-6236-용돈-관리
+
+백준 기타레슨 : https://velog.io/@heetaeheo/백준Java-2343-기타-레슨
+
+백준 이상한 술집 :
+
+백준 어두운 굴다리 :
