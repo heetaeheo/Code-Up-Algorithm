@@ -38,7 +38,7 @@ public class Main {
 
 	static void find() {
 		int L = 0, R = N, ans=N;
-		Arrays.sort(A,1,M+1);
+		
 		
 		while(L<=R) {
 			int mid = (L+R) /2 ;
