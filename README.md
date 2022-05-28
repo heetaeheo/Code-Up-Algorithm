@@ -45,6 +45,12 @@
 
 백준 기타레슨 : https://velog.io/@heetaeheo/백준Java-2343-기타-레슨
 
-백준 이상한 술집 :
+백준 이상한 술집 : https://velog.io/@heetaeheo/백준Java-2343-기타-레슨-ka5wr84v
 
-백준 어두운 굴다리 :
+백준 어두운 굴다리 : https://velog.io/@heetaeheo/백준Java-2343-기타-레슨-397mqprc
+
+백준 수들의 합 : https://velog.io/@heetaeheo/백준Java-2003-수들의-합2
+
+백준 부분 합 : https://velog.io/@heetaeheo/백준Java-1806-부분합
+
+백준  수 고르기 : https://velog.io/@heetaeheo/백준Java-2230-수-고르기
